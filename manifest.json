@@ -1,0 +1,35 @@
+{
+  "author": "Virtuos86",
+  "description": "Highlighting newbie's nicknames on Linux.Org.Ru.",
+  "manifest_version": 2,
+  "name": "Highlighting of LOR-newbies",
+  "version": "0.1.0",
+  "homepage_url": "https://github.com/Virtuos86/lor-newbie-for-chromium",
+  "icons": {
+    "48": "icons/good-penguin-48.png",
+    "96": "icons/good-penguin-96.png"
+  },
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.linux.org.ru/forum/*",
+        "*://www.linux.org.ru/gallery/*",
+        "*://www.linux.org.ru/news/*",
+        "*://www.linux.org.ru/polls/*"
+      ],
+      "js": ["matcher.js"]
+    }
+  ],
+
+  "permissions": [
+    "https://www.linux.org.ru/",
+    "storage"
+  ]
+}
