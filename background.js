@@ -2,9 +2,9 @@ function msgHandler(message, msgSender, sendResponce) {
     chrome.tabs.executeScript(
         {
             file: "highlight.js",
-            runAt: "document_end"
+            runAt: "document_start"
         },
-        () => { console.log("Ok"); }
+        () => { /*console.log("Ok");*/ }
     );
 }
 

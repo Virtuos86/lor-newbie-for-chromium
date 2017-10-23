@@ -22,7 +22,8 @@
         "*://www.linux.org.ru/forum/*",
         "*://www.linux.org.ru/gallery/*",
         "*://www.linux.org.ru/news/*",
-        "*://www.linux.org.ru/polls/*"
+        "*://www.linux.org.ru/polls/*",
+        "*://www.linux.org.ru/tracker/*"
       ],
       "js": ["matcher.js"]
     }
